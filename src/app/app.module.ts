@@ -15,6 +15,7 @@ import { MatInputModule,
   MatToolbarModule,
   MatExpansionModule} from '@angular/material';
 import { PostCreateComponent } from './post-create/post-create.component';
+import { PageComponent } from './page/page.component';
 
 const appRoutes: Routes = [
   {
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'create',
     component: PostCreateComponent
+  },
+  {
+  path: 'contactus',
+  component: PageComponent
   }
 ];
 
@@ -32,7 +37,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PostDetailsComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    PageComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

@@ -4,21 +4,15 @@
 <!-- <div class="button-row">
   <a mat-raised-button color="primary" [routerLink]="['/']"><mat-icon>add</mat-icon></a>
 </div> -->
-<mat-toolbar color="primary"> 
-    <mat-toolbar-row>
-            <span class="title-center">
-        <p id="title">Buddy Chat</p>
-    </span>
-      </mat-toolbar-row>
-    
-      <mat-toolbar-row>
+<div id='title' style="background-image: url(./assets/background-title.gif);">
+ <marquee><p>Buddy Chat</p></marquee>
 
-  <button mat-button [routerLink]="['/create']" color="Warn">Create</button>
-  <button mat-button [routerLink]="['/list']">List</button>
+  <button mat-button [routerLink]="['/create']">Post Blog</button>
+  <button mat-button [routerLink]="['/list']">Check Blog</button>
   <button mat-button [routerLink]="['/contactus']">Contact Us</button>
-</mat-toolbar-row>
- </mat-toolbar>
+</div>
  
+
 
 <!--<button mat-button color="primary" [matMenuTriggerFor]="menu">Posts Menu</button>
 <mat-menu color="primary" #menu="matMenu">

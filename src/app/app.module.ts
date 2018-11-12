@@ -16,6 +16,7 @@ import { MatInputModule,
   MatExpansionModule} from '@angular/material';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { PageComponent } from './page/page.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const appRoutes: Routes = [
   {
@@ -53,9 +54,19 @@ const appRoutes: Routes = [
   MatButtonModule,
   MatToolbarModule,
   MatExpansionModule,
-  MatMenuModule
+  MatMenuModule,
+  NgxSpinnerModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
+})
+
+
+ 
+@NgModule({
+  imports: [
+    // ...
+    
+  ]
 })
 export class AppModule { }

@@ -1,5 +1,31 @@
-<p>
-  page works!
-</p>
-<img src='./assets/profile-pic.jpg'>
-<h1>Developer Introduction</h1>
+<!-- form goes here -->
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="large"
+  color="#0000CD"
+  type="pacman">
+ <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+<img src='./assets/profile-pic.jpg' id='image' height="400" width="400">
+<h1>Developer Contact Form</h1>
+<p>Please Fill in Form Below to get in touch</p>
+<form action="mailto:g00351263@gmit.ie" method="post" enctype="text/plain">
+
+  <!-- name -->
+  <div class="field">
+    <input type="text" name="name" class="input" placeholder="Your Name">
+  </div>
+
+  <!-- email -->
+  <div class="field">
+    <input type="email" name="email" class="input" placeholder="Your Email">
+  </div>
+
+  <!-- message -->
+  <div class="field">
+    <textarea rows="10" cols="50" class="textarea" name="message" placeholder="What's on your mind?"></textarea>
+  </div>
+
+  <button type="submit" class="button is-danger is-large">Submit</button>
+
+</form>

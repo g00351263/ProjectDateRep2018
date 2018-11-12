@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from "@angular/forms";
 import {PostService} from '../services/post.service';
-
+import { NgxSpinnerService } from 'ngx-spinner';
 @Component({
   selector: 'app-post-create',
   templateUrl: './post-create.component.html',
@@ -9,7 +9,7 @@ import {PostService} from '../services/post.service';
 })
 export class PostCreateComponent implements OnInit {
 
-  constructor(private service:PostService) { }
+  constructor(private service:PostService,private spinner: NgxSpinnerService) { }
 
   onAddPost(form: NgForm) {
 
@@ -19,9 +19,13 @@ export class PostCreateComponent implements OnInit {
     form.resetForm();
   }
 
-
   ngOnInit() {
-
+    this.spinner.show();
+ 
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 1000);
 
 
   }

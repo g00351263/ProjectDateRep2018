@@ -1,0 +1,16 @@
+#image{
+    float: right;
+
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: red;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+    color: red;
+}
+
+::placeholder {
+    color: red;
+}
